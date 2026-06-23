@@ -194,7 +194,7 @@ def main():
                 time.sleep(1)
                 return
             
-        for i, bomb in enumerate(bombs):
+        for i, bomb in enumerate(bombs):#beamで爆弾を打ち落とす
                 if beam is not None:
                     if beam.rct.colliderect(bomb.rct): # ビームで爆弾を撃ち落としたら
                         bird.change_img(6,screen)
