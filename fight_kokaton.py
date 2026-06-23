@@ -199,7 +199,7 @@ def main():
                     if beam.rct.colliderect(bomb.rct): # ビームで爆弾を撃ち落としたら
                         bird.change_img(6,screen)
                         pg.display.update()
-                        score.score += 1
+                        score.score += 1 #爆弾を打ち落としたらスコアアップ(1点)
                         beam = None
                         bombs[i] = None
         bombs = [bomb for bomb in bombs if bomb is not None]
